@@ -4,7 +4,7 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
-  base: '/xs-docs/',
+  base: '/HondryTravis/xs-docs/',
   themeConfig: {
     sidebarDepth: 2,
     repo: 'HondryTravis/xs-docs',
