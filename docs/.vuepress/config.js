@@ -18,6 +18,17 @@ module.exports = {
         link: '/config/' 
       },
     ],
+    sidebar:{
+      '/guide/':[
+        {
+          title: '指南',
+          collapsable: false,
+          children:[
+            'summary'
+          ]
+        }
+      ]
+    },
     docsDir: 'docs',
     editLinks: true,
     editLinkText: '在 Github 上编辑',
