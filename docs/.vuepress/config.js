@@ -18,9 +18,9 @@ module.exports = {
         link: '/config/' 
       },
     ],
-  },
-  docsDir: 'docs',
-  editLinks: true,
-  editLinkText: '在 Github 上编辑',
-  lastUpdated: '更新时间',
+    docsDir: 'docs',
+    editLinks: true,
+    editLinkText: '在 Github 上编辑',
+    lastUpdated: '更新时间',
+  }
 }
