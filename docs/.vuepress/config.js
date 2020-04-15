@@ -10,6 +10,18 @@ module.exports = {
     repo: 'HondryTravis/xs-docs',
     nav: [
       { 
+        text: '学习', 
+        ariaLabel: '菜单',
+        items: [
+          {
+            text: '文档',
+            items: [
+              {text: 'API', link: '/doc/'}
+            ]
+          }
+        ]
+      },
+      { 
         text: '指南', 
         link: '/guide/' 
       },
@@ -24,9 +36,25 @@ module.exports = {
           title: '指南',
           collapsable: false,
           children:[
-            'summary'
+            'summary',
+          ]
+        },
+        {
+          title: '深入',
+          collapsable: false,
+          children:[
+            'deepchange'
           ]
         }
+      ],
+      '/doc/':[
+        {
+          title: 'Api',
+          collapsable: false,
+          children:[
+            'spreadsheet',
+          ]
+        },
       ]
     },
     docsDir: 'docs',
