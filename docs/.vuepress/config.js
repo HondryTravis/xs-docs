@@ -55,11 +55,20 @@ module.exports = {
             'spreadsheet',
           ]
         },
+      ],
+      '/config/':[
+        {
+          title: '配置指南',
+          collapsable: false,
+          children:[
+            'config_list',
+          ]
+        },
       ]
     },
     docsDir: 'docs',
     editLinks: true,
-    editLinkText: '在 Github 上编辑',
+    editLinkText: '在 Github 上编辑此页',
     lastUpdated: '更新时间',
   }
 }

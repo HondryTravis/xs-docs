@@ -8,15 +8,31 @@
 
 ```javascript
 // 你可以在 window 上访问
+const spreadsheet = (el, options = {}) => new Spreadsheet(el, options);
 if (window) {
   window.x_spreadsheet = spreadsheet;
   window.x_spreadsheet.locale = (lang, message) => locale(lang, message);
 }
+// 你可以这样创建
+const xs = x_spreadsheet(id, config)
+```
+
+也可以将库作为你开发的目录
+
+```js
+// index.js 这是默认导出的
+export default Spreadsheet;
+export {
+  spreadsheet,
+};
+// you local main page
+// 你可以直接导入本地库引入
+import Spreadsheet from '[path]'
 ```
 
 ## 方法
 
-### `loadData(data)`
+### `loadData(data)` 加载数据
 
 `@param {data}` json 数据格式
 
@@ -33,7 +49,7 @@ if (window) {
 
 ```
 
-### `getData()`
+### `getData()` 获取数据
 
 获取数据
 
@@ -42,7 +58,7 @@ if (window) {
   const d = xs.getData()
 ```
 
-### `change(callbak)`
+### `change(callbak)` 变更事件
 
 页面操作或者数据发生变化
 
@@ -53,13 +69,14 @@ if (window) {
   })
 ```
 
-### `locale(lang, message)`
+### `locale(lang, message)` 本地化
 
 ```js
+  // 加载语言包
   xs.locale('zh-cn');
 ```
 
-### `on(eventName, callback)`
+### `on(eventName, callback)` 绑定事件
 
 监听事件
 

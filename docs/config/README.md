@@ -2,11 +2,11 @@
 
 ## 默认配置
 
-你可以修改这些配置项
+你可以修改这些配置项，这些都是默认的，关于每个参数，我们会详细说明
 
 ```javascript
 {
-  mode: 'edit', // edit | read
+  mode: 'edit',
   showToolbar: true,
   showGrid: true,
   showContextmenu: true,
