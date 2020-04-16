@@ -29,6 +29,18 @@ module.exports = {
         text: '配置', 
         link: '/config/' 
       },
+      { 
+        text: '了解更多',
+        ariaLabel: '菜单', 
+        items: [
+          {
+            text: '帮助',
+            items: [
+              {text: '协同编辑该文档', link: '/help/'}
+            ]
+          }
+        ]
+      },
     ],
     sidebar:{
       '/guide/':[
@@ -54,7 +66,7 @@ module.exports = {
           children:[
             'spreadsheet',
           ]
-        },
+        }
       ],
       '/config/':[
         {
@@ -62,6 +74,15 @@ module.exports = {
           collapsable: false,
           children:[
             'config_list',
+          ]
+        },
+      ],
+      '/help/': [
+        {
+          title: '协作指南',
+          collapsable: false,
+          children:[
+            'markdown',
           ]
         },
       ]
