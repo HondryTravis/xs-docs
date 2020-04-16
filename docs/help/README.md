@@ -17,6 +17,10 @@
 
 如果还不熟悉，可以花费一点时间，[查看](/help/markdown/)
 
+## 使用 vuepress 构建
+
+如果不熟悉可以查看 [官方文档](https://www.vuepress.cn/)
+
 ## 提交
 
 pr 提交合并至 master
