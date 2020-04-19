@@ -9,8 +9,8 @@ module.exports = {
     sidebarDepth: 2,
     repo: 'HondryTravis/xs-docs',
     nav: [
-      { 
-        text: '学习', 
+      {
+        text: '学习',
         ariaLabel: '菜单',
         items: [
           {
@@ -21,17 +21,17 @@ module.exports = {
           }
         ]
       },
-      { 
-        text: '指南', 
-        link: '/guide/' 
+      {
+        text: '指南',
+        link: '/guide/'
       },
-      { 
-        text: '配置', 
-        link: '/config/' 
+      {
+        text: '配置',
+        link: '/config/'
       },
-      { 
+      {
         text: '了解更多',
-        ariaLabel: '菜单', 
+        ariaLabel: '菜单',
         items: [
           {
             text: '帮助',
@@ -65,6 +65,7 @@ module.exports = {
           collapsable: false,
           children:[
             'spreadsheet',
+            'data_proxy'
           ]
         }
       ],
