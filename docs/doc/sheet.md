@@ -227,6 +227,7 @@
 取消隐藏行列
 
 `@param type` row | col
+
 `@param index` rowIndex | colIndex
 
 ### `autofilter()`
