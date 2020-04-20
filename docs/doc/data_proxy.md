@@ -1,4 +1,4 @@
-# data_proxy 数据驱动核心
+# data_proxy 数据驱动核心类
 
 ## 私有方法
 

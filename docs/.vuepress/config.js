@@ -65,7 +65,8 @@ module.exports = {
           collapsable: false,
           children:[
             'spreadsheet',
-            'data_proxy'
+            'data_proxy',
+            'sheet'
           ]
         }
       ],

@@ -6,9 +6,9 @@
 
 - X-Spreadsheet
 - Element 重写 DomElement
-- Table 表格绘制
-- Sheet 表的常用方法
-- toolbar 工具栏自定义
-- data_proxy 数据驱动核心
-- editor
-- row
+- Table 类
+- Sheet 类
+- toolbar 类
+- data_proxy 数据驱动核心类
+- editor 类
+- row 类
