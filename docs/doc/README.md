@@ -10,7 +10,7 @@
 - [Sheet 类](/doc/sheet/)
 - toolbar 类
 - [data_proxy 数据驱动核心类](/doc/data_proxy/)
-- editor 类
+- [editor 类](/doc/editor/)
 - row 类
 
 持续更新

@@ -76,7 +76,7 @@
 
 ## 公有方法
 
-### `on(eventName, func)`
+### on(eventName, func)
 
 可以通过实例化后的 Sheet 实例调用，绑定事件函数
 
@@ -86,7 +86,7 @@
 
 调用方法 `实例.on(eventName, func){}`
 
-### `trigger(eventName, ...args)`
+### trigger(eventName, ...args)
 
 可以通过实例化后的 Sheet 实例调用，监听触发函数
 
@@ -96,7 +96,7 @@
 
 调用方法 `实例.trigger(eventName, ...args){}`
 
-### `resetData(data)`
+### resetData(data)
 
 可以通过实例化后的 Sheet 实例调用，重置刷新表格
 
@@ -104,7 +104,7 @@
 
 调用方法 `实例.resetData(data)`
 
-### `loadData(data)`
+### loadData(data)
 
 可以通过实例化后的 Sheet 实例调用，加载必要数据
 
@@ -112,7 +112,7 @@
 
 调用方法 `实例.loadData(data)`
 
-### `freeze(ri, ci)`
+### freeze(ri, ci)
 
 可以通过实例化后的 Sheet 实例调用，设定冻结行/列
 
@@ -122,31 +122,31 @@
 
 调用方法 `实例.freeze(ri, ci)`
 
-### `undo()`
+### undo()
 
 挂载撤销函数
 
 调用方法 `实例.undo()`
 
-### `redo()`
+### redo()
 
 挂载重做函数
 
 调用方法 `实例.redo()`
 
-### `reload()`
+### reload()
 
 重新加载表格，初始化事件等
 
 调用方法 `实例.reload()`
 
-### `getRect()`
+### getRect()
 
 可以获得当前表格的宽和高，不包含 index 栏和表格 title 栏
 
 调用方法 `实例.getRect()`
 
-### `getTableOffset()`
+### getTableOffset()
 
 可以获得当前表格的宽和高，left，top获得当前表格的详细偏移信息
 
@@ -154,31 +154,31 @@
 
 ## 私有方法
 
-### `scrollbarMove()`
+### scrollbarMove()
 
 滚动条滚动事件设置
 
-### `selectorSet()`
+### selectorSet()
 
 表格选择器设定
 
-### `selectorMove()`
+### selectorMove()
 
 表格选择器移动时设定
 
-### `overlayerMousemove(evt)`
+### overlayerMousemove(evt)
 
 表格覆盖层鼠标按下移动事件
 
 `@param evt` 事件event对象
 
-### `overlayerMousescroll(evt)`
+### overlayerMousescroll(evt)
 
 表格覆盖层鼠标滚动事件
 
 `@param evt` 事件event对象
 
-### `overlayerTouch(direction, distance)`
+### overlayerTouch(direction, distance)
 
 表格覆盖层触摸事件
 
@@ -186,43 +186,43 @@
 
 `@param distance` 距离
 
-### `verticalScrollbarSet()`
+### verticalScrollbarSet()
 
 垂直方向滚动条设定
 
-### `horizontalScrollbarSet()`
+### horizontalScrollbarSet()
 
 水平方向滚动条设定
 
-### `sheetFreeze()`
+### sheetFreeze()
 
 冻结行列设置函数
 
-### `sheetReset()`
+### sheetReset()
 
 表格重置刷新函数
 
-### `clearClipboard()`
+### clearClipboard()
 
 清空剪切板
 
-### `copy()`
+### copy()
 
 复制函数
 
-### `cut()`
+### cut()
 
 剪切函数
 
-### `paste()`
+### paste()
 
 粘贴函数
 
-### `hideRowsOrCols()`
+### hideRowsOrCols()
 
 隐藏行列函数
 
-### `unhideRowsOrCols(type, index)`
+### unhideRowsOrCols(type, index)
 
 取消隐藏行列
 
@@ -230,41 +230,41 @@
 
 `@param index` rowIndex | colIndex
 
-### `autofilter()`
+### autofilter()
 
 自动过滤函数
 
-### `toolbarChangePaintformatPaste()`
+### toolbarChangePaintformatPaste()
 
 格式粘贴
 
-### `overlayerMousedown(evt)`
+### overlayerMousedown(evt)
 
 覆盖层鼠标按下操作
 
 `@param evt` event 对象
 
-### `editorSetOffset()`
+### editorSetOffset()
 
 编辑层偏移
 
-### `editorSet()`
+### editorSet()
 
 编辑层设定
 
-### `verticalScrollbarMove(distance)`
+### verticalScrollbarMove(distance)
 
 垂直方向滚动设定
 
 `@param distance` 距离
 
-### `horizontalScrollbarMove(distance)`
+### horizontalScrollbarMove(distance)
 
 水平方向滚动设定
 
 `@param distance` 距离
 
-### `rowResizerFinished(cRect, distance)`
+### rowResizerFinished(cRect, distance)
 
 调整行结束事件
 
@@ -272,7 +272,7 @@
 
 `@param distance` 距离
 
-### `colResizerFinished(cRect, distance)`
+### colResizerFinished(cRect, distance)
 
 调整列结束事件
 
@@ -280,7 +280,7 @@
 
 `@param distance` 距离
 
-### `dataSetCellText(text, state = 'finished')`
+### dataSetCellText(text, state = 'finished')
 
 设置 data，并重新刷新表格
 
@@ -288,13 +288,13 @@
 
 `@param state` 输入状态
 
-### `insertDeleteRowColumn(type)`
+### insertDeleteRowColumn(type)
 
 实现表格的功能的整合
 
 `@param type` 功能类型
 
-### `toolbarChange(type, value)`
+### toolbarChange(type, value)
 
 工具栏发生改变触发的事件
 
@@ -302,7 +302,7 @@
 
 `@param value` 目标结果值
 
-### `sortFilterChange(ci, order, operator, value)`
+### sortFilterChange(ci, order, operator, value)
 
 筛选发生改变事件
 
@@ -314,6 +314,6 @@
 
 `@param value` 结果值
 
-### `sheetInitEvents()`
+### sheetInitEvents()
 
 表格初始化绑定事件

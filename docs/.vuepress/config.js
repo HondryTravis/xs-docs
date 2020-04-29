@@ -7,6 +7,7 @@ module.exports = {
   base: '/x-spreadsheet-doc/',
   themeConfig: {
     sidebarDepth: 2,
+    smoothScroll: true,
     repo: 'HondryTravis/xs-docs',
     nav: [
       {
@@ -66,7 +67,8 @@ module.exports = {
           children:[
             'spreadsheet',
             'data_proxy',
-            'sheet'
+            'sheet',
+            'editor'
           ]
         }
       ],

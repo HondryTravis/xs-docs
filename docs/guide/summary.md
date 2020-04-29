@@ -10,6 +10,8 @@
 
 ![demo](/x-spreadsheet-doc/images/sheet-demo.png)
 
+或者查看 [demo](https://myliang.github.io/x-spreadsheet)
+
 ## 快速入门开发
 
 ### CDN
