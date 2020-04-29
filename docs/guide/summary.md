@@ -8,7 +8,7 @@
 
 像这样
 
-![demo](/images/sheet-demo.png)
+![demo](/x-spreadsheet-doc/images/sheet-demo.png)
 
 ## 快速入门开发
 
