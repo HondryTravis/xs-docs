@@ -25,7 +25,8 @@ module.exports = {
         'sheet',
         'editor',
         'element',
-        'table'
+        'table',
+        'row'
       ]
     }
   ],
