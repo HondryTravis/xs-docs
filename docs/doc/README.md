@@ -6,7 +6,7 @@
 
 - [X-Spreadsheet](/doc/spreadsheet/)
 - [自定义 Element 类](/doc/element/)
-- Table 类
+- [Table 类](/doc/table/)
 - [Sheet 类](/doc/sheet/)
 - toolbar 类
 - [data_proxy 数据驱动核心类](/doc/data_proxy/)

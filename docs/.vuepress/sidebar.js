@@ -24,7 +24,8 @@ module.exports = {
         'data_proxy',
         'sheet',
         'editor',
-        'element'
+        'element',
+        'table'
       ]
     }
   ],
