@@ -30,7 +30,7 @@ export {
 import Spreadsheet from '[path]'
 ```
 
-## 方法
+## 公有方法
 
 ### `loadData(data)` 加载数据
 

@@ -1,3 +1,6 @@
+const nav = require('./nav')
+const sidebar = require('./sidebar')
+
 module.exports = {
   title: 'X-Spreadsheet中文文档',
   description: '数据驱动的基于 Web 的 Excel 库',
@@ -5,92 +8,16 @@ module.exports = {
     lineNumbers: true
   },
   base: '/x-spreadsheet-doc/',
+  extraWatchFiles: [
+    '.vuepress/nav.js', 
+    '.vuepress/sidebar.js'
+  ],
   themeConfig: {
     sidebarDepth: 2,
     smoothScroll: true,
     repo: 'HondryTravis/xs-docs',
-    nav: [
-      {
-        text: '学习',
-        ariaLabel: '菜单',
-        items: [
-          {
-            text: '文档',
-            items: [
-              {text: 'API', link: '/doc/'}
-            ]
-          }
-        ]
-      },
-      {
-        text: '指南',
-        link: '/guide/'
-      },
-      {
-        text: '配置',
-        link: '/config/'
-      },
-      {
-        text: '了解更多',
-        ariaLabel: '菜单',
-        items: [
-          {
-            text: '帮助',
-            items: [
-              {text: '协同编辑该文档', link: '/help/'}
-            ]
-          }
-        ]
-      },
-    ],
-    sidebar:{
-      '/guide/':[
-        {
-          title: '指南',
-          collapsable: false,
-          children:[
-            'summary',
-          ]
-        },
-        {
-          title: '深入',
-          collapsable: false,
-          children:[
-            'deepchange'
-          ]
-        }
-      ],
-      '/doc/':[
-        {
-          title: 'Api',
-          collapsable: false,
-          children:[
-            'spreadsheet',
-            'data_proxy',
-            'sheet',
-            'editor'
-          ]
-        }
-      ],
-      '/config/':[
-        {
-          title: '配置指南',
-          collapsable: false,
-          children:[
-            'config_list',
-          ]
-        },
-      ],
-      '/help/': [
-        {
-          title: '协作指南',
-          collapsable: false,
-          children:[
-            'markdown',
-          ]
-        },
-      ]
-    },
+    nav,
+    sidebar,
     docsDir: 'docs',
     editLinks: true,
     editLinkText: '在 Github 上编辑此页',

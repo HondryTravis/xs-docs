@@ -74,84 +74,6 @@
 
 `table` 初始化表格实例对象，挂载到 Sheet 类上
 
-## 公有方法
-
-### on(eventName, func)
-
-可以通过实例化后的 Sheet 实例调用，绑定事件函数
-
-`@param eventName`  事件名
-
-`@param func`  自定义事件
-
-调用方法 `实例.on(eventName, func){}`
-
-### trigger(eventName, ...args)
-
-可以通过实例化后的 Sheet 实例调用，监听触发函数
-
-`@param eventName` 事件名
-
-`@param ...args` 一个或多个参数
-
-调用方法 `实例.trigger(eventName, ...args){}`
-
-### resetData(data)
-
-可以通过实例化后的 Sheet 实例调用，重置刷新表格
-
-`@param data` 数据
-
-调用方法 `实例.resetData(data)`
-
-### loadData(data)
-
-可以通过实例化后的 Sheet 实例调用，加载必要数据
-
-`@param data` 数据
-
-调用方法 `实例.loadData(data)`
-
-### freeze(ri, ci)
-
-可以通过实例化后的 Sheet 实例调用，设定冻结行/列
-
-`@param ri` 行的索引
-
-`@param ci` 列的索引
-
-调用方法 `实例.freeze(ri, ci)`
-
-### undo()
-
-挂载撤销函数
-
-调用方法 `实例.undo()`
-
-### redo()
-
-挂载重做函数
-
-调用方法 `实例.redo()`
-
-### reload()
-
-重新加载表格，初始化事件等
-
-调用方法 `实例.reload()`
-
-### getRect()
-
-可以获得当前表格的宽和高，不包含 index 栏和表格 title 栏
-
-调用方法 `实例.getRect()`
-
-### getTableOffset()
-
-可以获得当前表格的宽和高，left，top获得当前表格的详细偏移信息
-
-调用方法 `实例.getTableOffset()`
-
 ## 私有方法
 
 ### scrollbarMove()
@@ -317,3 +239,81 @@
 ### sheetInitEvents()
 
 表格初始化绑定事件
+
+## 公有方法
+
+### on(eventName, func)
+
+可以通过实例化后的 Sheet 实例调用，绑定事件函数
+
+`@param eventName`  事件名
+
+`@param func`  自定义事件
+
+调用方法 `实例.on(eventName, func){}`
+
+### trigger(eventName, ...args)
+
+可以通过实例化后的 Sheet 实例调用，监听触发函数
+
+`@param eventName` 事件名
+
+`@param ...args` 一个或多个参数
+
+调用方法 `实例.trigger(eventName, ...args){}`
+
+### resetData(data)
+
+可以通过实例化后的 Sheet 实例调用，重置刷新表格
+
+`@param data` 数据
+
+调用方法 `实例.resetData(data)`
+
+### loadData(data)
+
+可以通过实例化后的 Sheet 实例调用，加载必要数据
+
+`@param data` 数据
+
+调用方法 `实例.loadData(data)`
+
+### freeze(ri, ci)
+
+可以通过实例化后的 Sheet 实例调用，设定冻结行/列
+
+`@param ri` 行的索引
+
+`@param ci` 列的索引
+
+调用方法 `实例.freeze(ri, ci)`
+
+### undo()
+
+挂载撤销函数
+
+调用方法 `实例.undo()`
+
+### redo()
+
+挂载重做函数
+
+调用方法 `实例.redo()`
+
+### reload()
+
+重新加载表格，初始化事件等
+
+调用方法 `实例.reload()`
+
+### getRect()
+
+可以获得当前表格的宽和高，不包含 index 栏和表格 title 栏
+
+调用方法 `实例.getRect()`
+
+### getTableOffset()
+
+可以获得当前表格的宽和高，left，top获得当前表格的详细偏移信息
+
+调用方法 `实例.getTableOffset()`

@@ -5,7 +5,7 @@
 文档包含每个类方法的说明，这些对你二次开发会很有帮助
 
 - [X-Spreadsheet](/doc/spreadsheet/)
-- Element 重写 DomElement
+- [自定义 Element 类](/doc/element/)
 - Table 类
 - [Sheet 类](/doc/sheet/)
 - toolbar 类
