@@ -36,7 +36,7 @@ import Spreadsheet from '[path]'
 
 **功能** 添加多表
 
-`@param name` string 名字
+`@param name` string 名称
 
 `@param active` boolean 默认为 true
 
