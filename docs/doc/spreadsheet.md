@@ -1,4 +1,4 @@
-# X-Spreadsheet
+# Spreadsheet
 
 主要入口
 
@@ -32,7 +32,55 @@ import Spreadsheet from '[path]'
 
 ## 公有方法
 
-### `loadData(data)` 加载数据
+### addSheet(name, active)
+
+**功能** 添加多表
+
+`@param name` string 名字
+
+`@param active` boolean 默认为 true
+
+### cell(ri, ci, sheetIndex)
+
+**功能** 获得单元格内容
+
+`@param ri` number 行坐标
+
+`@param ci` number 列坐标
+
+`@param sheetIndex` number 默认值为：0，当前表格index
+
+### cellStyle(ri, ci, sheetIndex)
+
+**功能** 获得单元格样式属性
+
+`@param ri` number 行坐标
+
+`@param ci` number 列坐标
+
+`@param sheetIndex` number 默认值为：0，当前表格index
+
+### cellText(ri, ci, text, sheetIndex)
+
+**功能** 设置选定表格中的单元格的值
+
+`@param ri` number 行坐标
+
+`@param ci` number 列坐标
+
+`@param text` string
+
+`@param sheetIndex` number 默认值为：0，当前表格index
+
+### reRender()
+
+**功能** 重新刷新整个表格
+
+### deleteSheet()
+
+**功能** 删除当前表
+
+### loadData(data) 加载数据
 
 `@param {data}` json 数据格式
 
@@ -49,7 +97,7 @@ import Spreadsheet from '[path]'
 
 ```
 
-### `getData()` 获取数据
+### getData() 获取数据
 
 获取数据
 
@@ -58,7 +106,7 @@ import Spreadsheet from '[path]'
   const d = xs.getData()
 ```
 
-### `change(callbak)` 变更事件
+### change(callback) 变更事件
 
 页面操作或者数据发生变化
 
@@ -69,14 +117,14 @@ import Spreadsheet from '[path]'
   })
 ```
 
-### `locale(lang, message)` 本地化
+### locale(lang, message) 本地化
 
 ```js
-  // 加载语言包
+  // 加载语言包, 需要cdn 引入汉化文件或者从本地导入
   xs.locale('zh-cn');
 ```
 
-### `on(eventName, callback)` 绑定事件
+### on(eventName, callback) 绑定事件
 
 监听事件
 

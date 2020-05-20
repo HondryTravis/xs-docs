@@ -6,7 +6,7 @@
 
 首先更新的是高频类需求
 
-- [X-Spreadsheet](/doc/spreadsheet/)
+- [Spreadsheet 类](/doc/spreadsheet/)
 - [自定义 Element 类](/doc/element/)
 - [Table 类](/doc/table/)
 - [Sheet 类](/doc/sheet/)
