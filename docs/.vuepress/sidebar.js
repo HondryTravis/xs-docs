@@ -4,7 +4,8 @@ module.exports = {
       title: '指南',
       collapsable: false,
       children:[
-        'summary',
+        '',
+        'summary'
       ]
     },
     {
@@ -35,6 +36,7 @@ module.exports = {
       title: '配置指南',
       collapsable: false,
       children:[
+        '',
         'config_list',
       ]
     },
@@ -44,6 +46,7 @@ module.exports = {
       title: '协作指南',
       collapsable: false,
       children:[
+        '',
         'markdown',
       ]
     },
