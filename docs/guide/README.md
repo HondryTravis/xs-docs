@@ -126,14 +126,6 @@ s.validate()
   s.cellText(5, 5, 'xxxx').cellText(6, 5, 'yyy').reRender();
 ```
 
-## 设置选定表格中单元格值
-
-```javascript
-const s = new Spreadsheet("#x-spreadsheet-demo")
-// cellText(ri, ci, text, sheetIndex = 0)
-s.cellText(5, 5, 'xxxx').cellText(6, 5, 'yyy').reRender();
-```
-
 ## 获取选定表格中单元的样式和值
 
 ```javascript
