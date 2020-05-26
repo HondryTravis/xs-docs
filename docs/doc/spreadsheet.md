@@ -1,6 +1,13 @@
 # Spreadsheet
 
-主要入口
+主要入口类，涉及表格初始化，data 初始化相关
+
+调用方法为：
+
+```js
+  // instance 你创建的实例，公有方法可以直接调用，私有方法不可以
+  instance.publicFn(args)
+```
 
 ## 主要实例
 

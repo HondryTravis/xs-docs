@@ -1,5 +1,14 @@
 # data_proxy 数据驱动核心类
 
+数据核心类，里边代理了很多功能
+
+```js
+  // instance 你创建的实例，公有方法可以直接调用，私有方法不可以
+  instance.data.publicFn(args)
+  // 或者
+  instance.sheet.data.publicFn(args)
+```
+
 ## 私有方法
 
 ### `canPaste` 判断是否可以粘贴

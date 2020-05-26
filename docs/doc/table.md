@@ -2,6 +2,13 @@
 
 该类主要负责表格的绘制和渲染
 
+调用方法为：
+
+```js
+  // instance 你创建的实例，公有方法可以直接调用，私有方法不可以
+  instance.sheet.table.publicFn(args)
+```
+
 ## 实例化
 
 需要传递代理 data_proxy 生成的对象，需要自定义 Element，不是
