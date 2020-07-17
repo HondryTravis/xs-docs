@@ -27,7 +27,8 @@ module.exports = {
         'editor',
         'element',
         'table',
-        'row'
+        'row',
+        'style'
       ]
     }
   ],
