@@ -2,9 +2,21 @@
 
 主要为行,列操作设置相关，设置高度，隐藏行列等，这个类被挂载到 data 实例下了，所以在全局的调用属性方法为：
 
+::: tip 新版本
+为每个单独的工作表都建立了单独的 data 对象，所以应该现在 instance.datas 中找到对应的 data 对象，在进行操作
+:::
+
 ```js
-  // instance 你创建的实例，公有方法可以直接调用，私有方法不可以
-  instance.data.rows.publicFn(args)
+
+// instance 你创建的实例，公有方法可以直接调用，私有方法不可以
+
+// 你当前表的名字
+const target_sheet_name = `sheet2`
+
+const target_data = instance.datas.find(it => it.name === target_sheet_name)
+
+target_data.rows.publicFn(args)
+
 ```
 
 ## 实例化
