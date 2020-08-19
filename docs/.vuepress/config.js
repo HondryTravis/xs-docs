@@ -3,7 +3,7 @@ const sidebar = require('./sidebar')
 
 module.exports = {
   title: 'X-Spreadsheet中文文档',
-  description: '数据驱动的基于 Web 的 Excel 库',
+  description: '极简、高效、配置简单',
   markdown: {
     lineNumbers: true
   },
