@@ -11,7 +11,7 @@ script:
 deploy:
   provider: pages
   target-branch: master
-  skip-cleanup: true
+  cleanup: true
   local-dir: docs/.vuepress/dist
   repo: HondryTravis/x-spreadsheet-doc
   github-token: $GITHUB_TOKEN
