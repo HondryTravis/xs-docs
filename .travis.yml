@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '12'
+  - lts/*
 cache:
   directories:
     - node_modules
@@ -11,10 +11,10 @@ script:
 deploy:
   provider: pages
   target-branch: master
-  cleanup: true
+  skip_cleanup: true
   local-dir: docs/.vuepress/dist
   repo: HondryTravis/x-spreadsheet-doc
   github-token: $GITHUB_TOKEN
-  keep-history: true
+  keep_history: true
   on:
     branch: master
