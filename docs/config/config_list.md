@@ -8,6 +8,7 @@
   showToolbar: true,
   showGrid: true,
   showContextmenu: true,
+  showBottomBar: true,
   view: {
     height: () => document.documentElement.clientHeight,
     width: () => document.documentElement.clientWidth,

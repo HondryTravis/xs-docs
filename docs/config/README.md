@@ -12,15 +12,18 @@
 
 ## 工具栏
 
-工具栏的显示状态 `showToolbar: Boolean`
+工具栏的显示状态 `showToolbar: boolean`, 默认为 true
+
+底部工具栏 `showBottomBar: boolean`, 默认为 true
 
 ```js
   showToolbar: true // false
+  showBottomBar: true // false
 ```
 
 ## 网格
 
-内容区域网格显示状态 `showGrid: Boolean`
+内容区域网格显示状态 `showGrid: boolean`
 
 ```js
   showGrid: true // false
@@ -28,7 +31,7 @@
 
 ## 右键菜单
 
-切换右键菜单显示状态 `showContextmenu: Boolean`
+切换右键菜单显示状态 `showContextmenu: boolean`
 
 ```js
   showContextmenu: true // false
