@@ -140,6 +140,8 @@ s.cellStyle(ri, ci);
 
 ### 如果是在 js 中引入
 
+如果遇到更多问题，可以查看 [issue #281](https://github.com/myliang/x-spreadsheet/issues/281)
+
 ```js
   // npm
   import Spreadsheet from 'x-data-spreadsheet';
