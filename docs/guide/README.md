@@ -19,8 +19,8 @@
 你可以直接在 html 静态文件中引入
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/x-data-spreadsheet@1.1.8/dist/xspreadsheet.css">
-<script src="https://unpkg.com/x-data-spreadsheet@1.1.8/dist/xspreadsheet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/x-data-spreadsheet@1.1.9/dist/xspreadsheet.css">
+<script src="https://unpkg.com/x-data-spreadsheet@1.1.9/dist/xspreadsheet.js"></script>
 
 <script>
   x_spreadsheet('#xspreadsheet');
@@ -155,9 +155,9 @@ s.cellStyle(ri, ci);
 
 ```html
 <!-- Import via CDN -->
-<link rel="stylesheet" href="https://unpkg.com/x-data-spreadsheet@1.1.8/dist/xspreadsheet.css">
-<script src="https://unpkg.com/x-data-spreadsheet@1.1.8/dist/xspreadsheet.js"></script>
-<script src="https://unpkg.com/x-data-spreadsheet@1.1.8/dist/locale/zh-cn.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/x-data-spreadsheet@1.1.9/dist/xspreadsheet.css">
+<script src="https://unpkg.com/x-data-spreadsheet@1.1.9/dist/xspreadsheet.js"></script>
+<script src="https://unpkg.com/x-data-spreadsheet@1.1.9/dist/locale/zh-cn.js"></script>
 
 <script>
   x_spreadsheet.locale('zh-cn');
