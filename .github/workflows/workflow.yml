@@ -1,0 +1,55 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build With Deploy
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "master" ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    name: Build With Deploy
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Config node env and version
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      # install command
+      - name: Run Install Stage
+        run: |
+          npm i -g yarn
+          yarn
+      # cat some variables
+      - name: Run Cat Variables
+        run: |
+          echo node: `node -v`
+          echo npm: `npm -v`
+          echo yarn: `yarn --version`
+      # build command
+      - name: Run Build Stage
+        run: |
+          yarn docs:build
+      # deploy command
+      - name: Run init git repository and create commit
+        run: |
+          cd docs/.vuepress/dist
+          git config --global init.defaultBranch master
+          git init
+          git config --global user.name ${{ secrets.WORKFLOW_USERNAME }}
+          git config --global user.email ${{ secrets.WORKFLOW_EMAIL }}
+          git add -A
+          git commit -m 'Deploy with Actions!'
+          git push -f https://${{ secrets.WORKFLOW_GITHUB_TOKEN }}@github.com/HondryTravis/x-spreadsheet-doc.git master
+          cd -
+      # notification
+      - name: Notification
+        run: echo 'Done. Your build exited with 0;'
