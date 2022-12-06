@@ -47,7 +47,7 @@ jobs:
           git config --global user.name ${{ secrets.WORKFLOW_USERNAME }}
           git config --global user.email ${{ secrets.WORKFLOW_EMAIL }}
           git add -A
-          git commit -m 'Deploy with Actions!'
+          git commit -m 'Deploy With Actions! 🍺'
           git push -f https://${{ secrets.WORKFLOW_GITHUB_TOKEN }}@github.com/HondryTravis/x-spreadsheet-doc.git master
           cd -
       # notification
